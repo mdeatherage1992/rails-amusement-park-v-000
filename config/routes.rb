@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   post "/sessions/create", to: "sessions#create"
   delete "/signout", to: "sessions#destroy"
   post "/rides/new", to: "rides#new"
-   get "/logout" => "sessions#destroy"
+  get "/logout" => "sessions#destroy"
   resources :attractions
   resources :users
 end
